@@ -370,32 +370,6 @@ class _Home_ScreenState extends State<Home_Screen> {
                     const SizedBox(
                       height: 20,
                     ),
-                    InkWell(
-                      onTap: () {
-                        print('Yes');
-                      },
-                      child: const Row(
-                        children: [
-                          SizedBox(
-                            width: 20,
-                          ),
-                          Icon(
-                            Icons.info_outline,
-                            color: Colors.white,
-                          ),
-                          SizedBox(
-                            width: 20,
-                          ),
-                          Text(
-                            'About Us',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold),
-                          )
-                        ],
-                      ),
-                    ),
                   ],
                 )
               ],

@@ -5,16 +5,20 @@ import 'package:flutter/material.dart';
 import 'globals.dart';
 
 class Stats extends StatefulWidget {
-  String str;
+  String str='';
 
   Stats({required this.str});
 
-  _StatsState createState() => _StatsState(str: str);
+  _StatsState createState() => _StatsState(string: str);
 }
 
 class _StatsState extends State<Stats> {
-  String str;
-  _StatsState({required this.str});
+  String string='';
+
+  _StatsState({required string}){
+    this.string=string;
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -138,7 +142,7 @@ class _StatsState extends State<Stats> {
                                           ? 'Yellow'
                                           : index == 6
                                               ? 'Red'
-                                              : 'Win %';
+                                              : string;
                   String val=index == 0
                       ? '10'
                       : index == 1

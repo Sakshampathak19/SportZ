@@ -43,7 +43,7 @@ class One extends State<SignUP>{
         'Uid':userCredential.user!.uid
       });
 
-      Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>const FavSport()));
+      Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>const FavSport()));    
 
     }
     on FirebaseAuthException catch (e){
